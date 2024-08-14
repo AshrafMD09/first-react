@@ -4,7 +4,6 @@ import { useState } from "react";
 function ListGroup() {
     const cities = ["New York", "Tokyo", "Berlin", "Paris"];
     const [selectedIndex, setSelectedIndex] = useState(-1);
-    const creatItem = () => {cities.length > 0 ? console.log(cities.length) : null}
   return (
     <>
       <h1>Popular Cities</h1>
@@ -24,7 +23,6 @@ function ListGroup() {
           </li>
         ))}
       </ul>
-      {creatItem()}
     </>
   );
 }
